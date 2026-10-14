@@ -1,6 +1,6 @@
 # sitemap dump by cybersafe
 
-Chrome Manifest V3 extension. Collect all page URLs declared in XML sitemaps and their child files into one CSV. The four requested sites are prefilled.
+Chrome Manifest V3 extension. Collect all page URLs declared in XML sitemaps and their child files into one CSV. Enter one or more sitemap URLs, one per line.
 
 ## Install
 
@@ -8,7 +8,7 @@ Chrome Manifest V3 extension. Collect all page URLs declared in XML sitemaps and
 2. Enable **Developer mode**.
 3. Click **Load unpacked** and select this repository folder (the folder containing `manifest.json`).
 4. Click the sitemap dump by cybersafe extension icon to open its working tab.
-5. Click **รวบรวมและดาวน์โหลด CSV** and allow access to the selected sites.
+5. Paste your sitemap URLs, one per line, then click **รวบรวมและดาวน์โหลด CSV** and allow access to the selected sites.
 
 No build step or runtime dependencies. Keep the working tab open until collection and download finish. The toolbar icon focuses an existing working tab; competing tabs are blocked because they share the local results database.
 
