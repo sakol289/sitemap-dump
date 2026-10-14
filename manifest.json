@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "sitemap dump by cybersafe",
+  "version": "1.0.1",
+  "description": "Collect URLs from XML sitemaps and their child sitemaps into one CSV.",
+  "permissions": [
+    "downloads"
+  ],
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_title": "sitemap dump by cybersafe",
+    "default_icon": {
+      "16": "assets/icon-16.png",
+      "32": "assets/icon-32.png",
+      "48": "assets/icon-48.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "assets/icon-16.png",
+    "32": "assets/icon-32.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  }
+}

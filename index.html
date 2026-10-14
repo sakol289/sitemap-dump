@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sitemap dump by cybersafe</title>
+  <link rel="icon" type="image/png" href="assets/icon-32.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header class="brand"><img class="brand-logo" src="assets/cybersafe-logo.jpg" alt="Cyber Safe" width="96" height="96"><div><span class="badge">CHROME EXTENSION</span><h1>sitemap dump by cybersafe</h1><p>รวบรวม URL จาก sitemap และไฟล์ลูกทั้งหมดเป็น CSV เดียว</p></div></header>
+  <section class="card">
+    <label for="roots">Sitemap URLs <span>หนึ่ง URL ต่อบรรทัด</span></label>
+    <textarea id="roots" rows="6" spellcheck="false">https://www.devilbacklink.com/sitemap.xml
+https://www.bydbdautogroup.com/sitemap_index.xml
+https://short-series.com/sitemap.xml
+https://new-like.com/sitemap.xml</textarea>
+    <div class="options"><label for="format">รูปแบบ CSV</label><select id="format"><option value="simple">URL อย่างเดียว</option><option value="detail">URL พร้อมข้อมูล sitemap</option></select></div>
+    <div class="actions"><button id="start">รวบรวมและดาวน์โหลด CSV</button><button id="stop" class="secondary" disabled>หยุด</button><button id="export" class="secondary" disabled>ดาวน์โหลด CSV อีกครั้ง</button></div>
+    <p class="hint">เปิดแท็บนี้ไว้ระหว่างรวบรวม • เก็บเฉพาะ URL หน้าเว็บที่ประกาศใน sitemap • URL รูปภาพและวิดีโอไม่ปนในผลลัพธ์</p>
+  </section>
+  <section class="card" aria-label="ความคืบหน้า">
+    <p id="status" role="status" aria-live="polite">พร้อมเริ่มต้น</p>
+    <div class="stats"><div><strong id="discovered">0</strong><span>ไฟล์ที่พบ</span></div><div><strong id="done">0</strong><span>ไฟล์สำเร็จ</span></div><div><strong id="failed">0</strong><span>ไฟล์ล้มเหลว</span></div><div><strong id="unique">0</strong><span>URL ไม่ซ้ำ</span></div></div>
+    <p id="current" class="hint"></p>
+  </section>
+  <section id="errors-panel" class="card" hidden><h2>ไฟล์ที่โหลดไม่สำเร็จ</h2><p>CSV ที่ได้เป็นผลลัพธ์บางส่วน จนกว่าจะโหลดไฟล์เหล่านี้สำเร็จ</p><button id="retry" class="secondary">ลองใหม่เฉพาะไฟล์ที่ล้มเหลว</button><ul id="errors"></ul></section>
+  <footer>ประมวลผลในเครื่องของคุณ ไม่มีเซิร์ฟเวอร์กลาง</footer>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>
